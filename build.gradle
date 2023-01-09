@@ -13,7 +13,7 @@ void sayHelloWorld(){
 	println "HelloWorld!"
 }
 
-int doubleIt(int i){
+def doubleIt(int i){
 	println(i)
 	i * 3 //last line is returned
 	def y = i
