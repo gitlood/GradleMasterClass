@@ -1,5 +1,14 @@
-defaultTasks 'hello'
+import java.text.*
 
-task ('hello').doLast{
-	println "Hello World"
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'")
+sdf.setTimeZone(TimeZone.getTimeZone("UTC"))
+
+println "Hello World now: " + sdf.format(new Date())
+
+//inline code example
+
+sayHelloWorld()
+
+void sayHelloWorld(){
+	println "HelloWorld!"
 }
